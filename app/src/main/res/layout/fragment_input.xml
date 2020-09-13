@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header_register"
+        android:elevation="5dp" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:transitionName="tvLogin"
+        android:text="New User/Update User"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lean"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="BatchNumber"
+                android:textColor="@color/colorPurple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inp_batch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textEmailAddress" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="RFID Nummber"
+                android:textColor="@color/colorPurple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inp_rfidno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Late Count"
+                android:textColor="@color/colorPurple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inp_latecount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:layout_marginRight="10dp"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Leave Count"
+                android:textColor="@color/colorPurple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inp_leavecount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lean"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="35dp"
+            android:elevation="10dp">
+
+            <Button
+                android:id="@+id/imp_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ui"
+                android:text="Add User"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+</FrameLayout>
